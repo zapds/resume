@@ -7,32 +7,25 @@
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
 \usepackage{tikz}
-\usepackage{hyperref}
+\input{glyphtounicode}
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
 
 \addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-\raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
@@ -43,34 +36,30 @@
 \pdfgentounicode=1
 
 % Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{{#1 \vspace{-2pt}}}
-}
-
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & {\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \small #4 \\
+  \end{tabular*}\vspace{-6pt}
 }
-
 \newcommand{\resumeProjectHeading}[2]{
   \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2 \\
+  \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\ExternalLink}{%
-    \tikz[x=1.2ex, y=1.2ex]{
-        \begin{scope}[x=1ex, y=1ex]
-            \clip (-0.1,-0.1) --++ (0, 1.2) --++ (0.6, 0) --++ (0, -0.6) --++ (0.6, 0) --++ (0, -1);
-            \path[draw, line width = 0.5, rounded corners=0.5] (0,0) rectangle (1,1);
-        \end{scope}
-        \path[draw, line width = 0.8] (0.5, 0.5) -- (1, 1);
-        \path[draw, line width = 0.8] (0.6, 1) -- (1, 1) -- (1, 0.6);
-    }
+\tikz[x=1.2ex, y=1.2ex]{
+  \begin{scope}[x=1ex, y=1ex]
+    \clip (-0.1,-0.1) --++ (0,1.2) --++ (0.6,0) --++ (0,-0.6) --++ (0.6,0) --++ (0,-1);
+    \path[draw, line width=0.5, rounded corners=0.5] (0,0) rectangle (1,1);
+  \end{scope}
+  \path[draw, line width=0.8] (0.5,0.5) -- (1,1);
+  \path[draw, line width=0.8] (0.6,1) -- (1,1) -- (1,0.6);
+}
 }
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
@@ -78,118 +67,116 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%% RESUME STARTS HERE %%%%%%%%%%%%%%%%%%
-
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Narendhar T S} \\ \vspace{1pt}
-    \small +91 97911 08288 $|$ \href{mailto:n4rendhar@gmail.com}{\underline{narendhararasu@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/narendharts}{\underline{linkedin.com/in/NarendharTS}} $|$ \href{https://zapdos.me}{\underline{Portfolio Website}}
+  \textbf{\Huge \scshape Narendhar T S} \\ \vspace{2pt}
+  \small
+  +91 97911 08288 $|$
+  \href{mailto:narendhararasu@gmail.com}{narendhararasu@gmail.com} $|$
+  \href{https://linkedin.com/in/narendharts}{linkedin.com/in/narendharts} $|$
+  \href{https://zapdos.me}{zapdos.me}
 \end{center}
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Padma Seshadri Bala Bhavan Senior Secondary School, Siruseri}{Chennai, IN}
-      {CBSE, 12th: 94.80\%, 10th: 96.00\% }{2012 -- 2024}
-    \resumeSubheading
-      {Indian Institute of Information Technology, Design and Manufacturing}{Chennai, IN}
-      {B.Tech in Electronics and Communication Engineering, GPA: 8.58}{2024 -- Expected 2028}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Indian Institute of Information Technology, Design and Manufacturing}{Chennai, IN}
+    {B.Tech in Electronics and Communication Engineering (GPA: 8.58)}{2024 -- Expected 2028}
+    \resumeItemListStart
+      \resumeItem{Relevant coursework: Data Structures, Algorithms, Programming, Computer Networks, Operating Systems (ongoing)}
+      \resumeItem{Available for full-time internship (10--12 weeks) between May--August 2026; returning to full-time study post internship}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Padma Seshadri Bala Bhavan Senior Secondary School}{Chennai, IN}
+    {CBSE -- Class XII: 94.8\%, Class X: 96.0\%}{2012 -- 2024}
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-    % Apollo Bot
-    \resumeProjectHeading
-        {\href{https://apollo-bot.xyz}{\textbf{Apollo Bot \ExternalLink}} $|$ \emph{Python, Node.js, PostgreSQL, Redis, SvelteKit, TailwindCSS, Linux}}{2021 -- 2025 (sold)}
-        \resumeItemListStart
-          \resumeItem{Built and maintained a high-performance Discord bot serving 450,000+ communities.}
-          \resumeItem{Designed scalable backend systems with optimized PostgreSQL schema and Redis caching, supporting 500+ concurrent event streams, reading 1000+ Discord messages per second}
-          \resumeItem{Developed a multi-core internal process manager using IPC for horizontal scalability.}
-          \resumeItem{Created a modern SvelteKit dashboard with OAuth2 authentication.}
-          \resumeItem{Integrated Prometheus and Grafana for systems monitoring.}
-          \resumeItem{Built a white-label system generating recurring revenue and covering full server costs.}
-        \resumeItemListEnd
+\resumeProjectHeading
+  {\href{https://apollo-bot.xyz}{\textbf{Apollo Bot} \ExternalLink} $|$ \emph{Python, Node.js, PostgreSQL, Redis, Linux}}{2021 -- 2025}
+\resumeItemListStart
+  \resumeItem{Built and scaled a distributed Discord bot platform used by 450,000+ communities, processing 1,000+ messages/second at peak load.}
+  \resumeItem{Improved request latency by \textasciitilde40\% by designing optimized PostgreSQL schemas and Redis caching for 500+ concurrent event streams.}
+  \resumeItem{Designed a multi-process IPC-based worker system enabling horizontal scaling across CPU cores.}
+  \resumeItem{Developed a web dashboard with OAuth2 authentication for configuration and analytics.}
+  \resumeItem{Independently owned architecture, deployment, monitoring, and monetization until successful acquisition.}
+\resumeItemListEnd
+
+% Refile
+\resumeProjectHeading
+    {\textbf{Refile} $|$ \emph{Python, FastAPI, Docker, Linux, OpenAI API, Supabase, Next.js}}{2025}
+    \resumeItemListStart
+      \resumeItem{Co-built an AI-driven file automation platform that converts natural-language instructions into secure, executable workflows for PDFs, images, audio, and video.}
+      \resumeItem{Designed a sandboxed execution layer using Docker containers with preinstalled CLI tools (FFmpeg, Pandoc, LibreOffice, Tesseract) to ensure isolation and safety.}
+      \resumeItem{Implemented an LLM-based planning pipeline to translate user intent into validated, multi-step shell commands without requiring user-written code.}
+      \resumeItem{Developed a FastAPI backend for file uploads, job orchestration, and concurrent container lifecycle management.}
+      \resumeItem{Delivered a production-ready MVP in a 36-hour national hackathon; secured \textbf{2nd place} among 3000+ teams for technical execution and product vision.}
+    \resumeItemListEnd
 
 
-    % FlexiFeed
-    \resumeProjectHeading
-        {\href{https://github.com/zapds/flexifeed}{\textbf{FlexiFeed \ExternalLink}} $|$ \emph{Node.js, Python, SvelteKit, TailwindCSS, Playwright, Flask, Google OAuth2}}{2024}
-        \resumeItemListStart
-          \resumeItem{Developed an AI-powered personalized news feed platform.}
-          \resumeItem{Built SvelteKit UI with clean, minimal UX patterns.}
-          \resumeItem{Enabled low-latency streaming responses via WebSockets to the Flask backend.}
-          \resumeItem{Implemented news scraping with Playwright + OpenAI summarization pipeline.}
-          \resumeItem{Won the Project Development Competition at IIITDM Developers Club.}
-        \resumeItemListEnd
+\resumeProjectHeading
+  {\href{https://github.com/zapds/flexifeed}{\textbf{FlexiFeed} \ExternalLink} $|$ \emph{Node.js, Python, SvelteKit, Playwright}}{2024}
+\resumeItemListStart
+  \resumeItem{Built an AI-powered personalized news platform that scraped, summarized, and streamed content in near real time.}
+  \resumeItem{Implemented WebSocket-based streaming to reduce perceived latency in AI-generated responses.}
+  \resumeItem{Award-winning project at IIITDM Project Development Competition for product design and execution.}
+\resumeItemListEnd
 
-    % Tweet Enhancer
-    \resumeProjectHeading
-        {\href{https://github.com/zapds/tweet-enhancer}{\textbf{Tweet Enhancer \ExternalLink}} $|$ \emph{SvelteKit, OpenAI API, Vercel}}{2023}
-        \resumeItemListStart
-          \resumeItem{Created an AI-powered tool to rephrase social content with customizable tone control.}
-          \resumeItem{Ranked \#8 out of 60+ entries in the Quine.sh Quest competition.}
-        \resumeItemListEnd
+\resumeProjectHeading
+  {\href{https://wtf.zapdos.me}{\textbf{WTFood -- College Mess Menu App} \ExternalLink} $|$ \emph{SvelteKit, PWA}}{2025}
+\resumeItemListStart
+  \resumeItem{Designed and deployed an offline-first Progressive Web App used daily by 200+ students.}
+  \resumeItem{Implemented rule-based meal detection supporting real-time schedules and odd/even week rotations.}
+  \resumeItem{Enabled stale-while-revalidate sync to ensure fast offline access with periodic updates.}
+\resumeItemListEnd
 
-    % WTFood (NEW)
-    \resumeProjectHeading
-        {\href{https://wtf.zapdos.me}{\textbf{WTFood – College Mess Menu App \ExternalLink}} $|$ \emph{SvelteKit, TailwindCSS, PWA}}{2025}
-        \resumeItemListStart
-          \resumeItem{Built an offline-capable Progressive Web App used daily by 200+ students.}
-          \resumeItem{Implemented smart meal detection based on real-time schedule.}
-          \resumeItem{Designed week-rotation engine supporting odd/even week menus.}
-          \resumeItem{Developed a clean, minimal UI inspired by shadcn component patterns.}
-          \resumeItem{Enabled offline sync with stale-while-revalidate updates.}
-        \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
+\section{Leadership \& Experience}
+\resumeSubHeadingListStart
 
-    % Tech Affairs
-    \resumeProjectHeading
-        {\textbf{Tech Development Coordinator @ IIITDM Technical Affairs} $|$ \emph{Next.js, Supabase}}{2025 -- Present}
-        \resumeItemListStart
-          \resumeItem{Migrated the legacy Create React App codebase to a modern Next.js stack with Supabase integration.}
-          \resumeItem{Refactored and optimized routing structure, reducing load times and simplifying maintainability.}
-          \resumeItem{Maintaining and contributing to the official website: \href{https://tech-affairs-iiitdm.vercel.app/}{tech-affairs-iiitdm.vercel.app}.}
-        \resumeItemListEnd
+\resumeProjectHeading
+  {\textbf{Tech Development Coordinator -- IIITDM Technical Affairs}}{2025 -- Present}
+\resumeItemListStart
+  \resumeItem{Led frontend migration of the official technical affairs website from Create React App to Next.js, improving performance and maintainability.}
+  \resumeItem{Worked with a cross-functional student team to deploy and maintain production infrastructure using Supabase.}
+\resumeItemListEnd
 
-    % Developers Club
-    \resumeProjectHeading
-        {\textbf{Coordinator @ IIITDM Developers Club (previously Google Developer Student Club)}}{2025 -- Present}
-        \resumeItemListStart
-          \resumeItem{Helped organize multiple development events, workshops, and hands-on coding sessions for the institute.}
-          \resumeItem{Supported community engagement and contributed to fostering a stronger developer culture on campus.}
-        \resumeItemListEnd
+\resumeProjectHeading
+  {\textbf{Coordinator -- IIITDM Developers Club}}{2025 -- Present}
+\resumeItemListStart
+  \resumeItem{Co-organized technical workshops and hands-on coding events attended by 100+ students across multiple batches.}
+  \resumeItem{Contributed to growing and sustaining an active campus developer community.}
+\resumeItemListEnd
 
-    % Cybersecurity Club (NEW)
-    \resumeProjectHeading
-        {\textbf{Core Member @ IIITDM Cybersecurity Club}}{2025 -- Present}
-        \resumeItemListStart
-          \resumeItem{Collaborated with core team to organize Cybersecurity Awareness Month (October 2025).}
-          \resumeItem{Assisted in planning sessions, CTF-style activities, and institute-wide outreach.}
-        \resumeItemListEnd
+\resumeProjectHeading
+  {\textbf{Core Member -- IIITDM Cybersecurity Club}}{2025 -- Present}
+\resumeItemListStart
+  \resumeItem{Collaborated with the core team to organize Cybersecurity Awareness Month, including talks and CTF-style activities.}
+\resumeItemListEnd
 
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}: Python, JavaScript, C, SQL \\
-     \textbf{Databases}: PostgreSQL, Redis \\
-     \textbf{Tools \& Platforms}: Git, Linux, Prometheus, GitHub, Cloudflare, Docker, Vercel  \\
-     \textbf{Frameworks/Libraries}: Next.js, TailwindCSS, SvelteKit, Node.js \\
-    }}
- \end{itemize}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{
+  \item{
+    \textbf{Languages}: Python, JavaScript, C, Java (basic) \\
+    \textbf{Core CS}: Data Structures, Algorithms, OOP, Networking fundamentals \\
+    \textbf{Databases}: PostgreSQL, Redis \\
+    \textbf{Frameworks}: Node.js, Next.js, SvelteKit \\
+    \textbf{Tools}: Git, Linux, Docker, Prometheus, Cloudflare, Vercel
+  }
+}
+\end{itemize}
 
 \end{document}
