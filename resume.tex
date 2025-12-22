@@ -1,0 +1,244 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.8] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.8] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Narendhar T S} \\ \vspace{1pt}
+    \small +91 97911 08288 $|$ \href{mailto:n4rendhar@gmail.com}{\underline{n4rendhar@gmail.com}} $|$ 
+    \href{linkedin.com/in/narendharts}{\underline{linkedin.com/in/NarendharTS}} 
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Padma Seshadri Bala Bhavan Senior Secondary School, Siruseri} {Chennai, IN}
+      {Central Board of Secondary Education}{2012 -- 2024}
+    \resumeSubheading
+      {Indian Institute of Information Technology, Design and Manufacturing}{Chennai, IN}
+      {Bachelor of Technology in Electronics and Communication Engineering}{2024 -- Expected 2028}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Undergraduate Research Assistant}{June 2020 -- Present}
+%       {Texas A\&M University}{College Station, TX}
+%       \resumeItemListStart
+%         \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+%         \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+%         \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+%       \resumeItemListEnd
+      
+% % -----------Multiple Positions Heading-----------
+% %    \resumeSubSubheading
+% %     {Software Engineer I}{Oct 2014 - Sep 2016}
+% %     \resumeItemListStart
+% %        \resumeItem{Apache Beam}
+% %          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+% %     \resumeItemListEnd
+% %    \resumeSubHeadingListEnd
+% %-------------------------------------------
+
+%     \resumeSubheading
+%       {Information Technology Support Specialist}{Sep. 2018 -- Present}
+%       {Southwestern University}{Georgetown, TX}
+%       \resumeItemListStart
+%         \resumeItem{Communicate with managers to set up campus computers used on campus}
+%         \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+%         \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+%     \resumeItemListEnd
+
+%     \resumeSubheading
+%       {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+%       {Southwestern University}{Georgetown, TX}
+%       \resumeItemListStart
+%         \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+%         \resumeItem{Developed a game in Java to test the generated dungeons}
+%         \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+%         \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+%         \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+%         \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+%       \resumeItemListEnd
+
+%   \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\href{https://apollo-bot.xyz}{\textbf{Apollo Bot \ExternalLink}} $|$ \emph{Python, Node.js, PostgreSQL, Redis, SvelteKit, TailwindCSS, Git, Linux}}{2021 -- Present}
+        \resumeItemListStart
+          \resumeItem{Built and maintained a high-performance Python-based Discord bot serving over 450,000 active communities}
+          \resumeItem{Designed scalable backend architecture with efficient PostgreSQL schema, Redis caching, and multiprocessing to handle 500+ concurrent events}
+          \resumeItem{Developed internal APIs and command handlers in Python, ensuring minimal latency and high uptime}
+          \resumeItem{Deployed bot on a Linux VPS using SSH, process managers, and bash scripting for seamless operation across multiple cores}
+          \resumeItem{Created a modern web dashboard using SvelteKit with OAuth2 integration for user authentication}
+          \resumeItem{Integrated Prometheus and Grafana for real-time system monitoring and performance tuning}
+          \resumeItem{Implemented a white-labeling system that generates sustainable monthly revenue, covering infrastructure costs}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\href{https://github.com/zapds/flexifeed}{\textbf{FlexiFeed \ExternalLink}} $|$ \emph{SvelteKit, TailwindCSS, Playwright, Flask, Google OAuth2}}{}
+        \resumeItemListStart
+          \resumeItem{Built a full-stack AI-powered web app to rephrase social content with customizable writing tones}
+          \resumeItem{Designed a clean, intuitive frontend and optimized backend API calls for low-latency responses}
+          \resumeItem{Ranked \#8 out of 60+ entries in the Quine.sh Quest development competition}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\href{https://github.com/zapds/tweet-enhancer}{\textbf{Tweet Enhancer \ExternalLink}} $|$ \emph{SvelteKit, OpenAI API, Vercel}}{}
+        \resumeItemListStart
+          \resumeItem{Built a full-stack AI-powered web app to rephrase social content with customizable writing tones}
+          \resumeItem{Designed a clean, intuitive frontend and optimized backend API calls for low-latency responses}
+          \resumeItem{Ranked \#8 out of 60+ entries in the Quine.sh Quest development competition}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C, SQL, Bash} \\
+     \textbf{Databases \& Caching}{: PostgreSQL, Redis} \\
+     \textbf{Tools \& Platforms}{: Git, Linux, Prometheus, Grafana, SSH, VS Code, Vercel} \\
+     \textbf{Frameworks/Libraries}{: SvelteKit, Node.js} \\
+    }}
+ \end{itemize}
+
+\end{document}
