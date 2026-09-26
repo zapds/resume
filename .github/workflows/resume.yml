@@ -37,9 +37,8 @@ jobs:
       - name: Set version
         id: version
         run: |
-          datetime=$(date +'%Y-%m-%d+%H:%M:%S')
-          version="v$datetime"
-          echo "::set-output name=version::$version"
+          version="v$(date -u +'%Y-%m-%d-%H%M%S')"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
 
   release:
     runs-on: ubuntu-latest
@@ -48,13 +47,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          ref: "${{ github.ref_name }}"
-
-      - name: Create a tag
-        run: |
-          git tag ${{ needs.version.outputs.version }}
-          git push origin --tags
 
       - name: Download artifact
         uses: actions/download-artifact@v4
@@ -66,4 +58,6 @@ jobs:
         env:
           GH_TOKEN: "${{ github.token }}"
         run: |
-          gh release create ${{ needs.version.outputs.version }} out/resume.pdf -t "Resume ${{ needs.version.outputs.version }}"
+          gh release create "${{ needs.version.outputs.version }}" out/resume.pdf \
+            --title "Resume ${{ needs.version.outputs.version }}" \
+            --target "${{ github.sha }}"
