@@ -30,8 +30,9 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
 
 \pdfgentounicode=1
 
@@ -67,6 +68,7 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+
 \begin{document}
 
 %----------HEADING----------
@@ -76,7 +78,7 @@
   +91 97911 08288 $|$
   \href{mailto:narendhararasu@gmail.com}{narendhararasu@gmail.com} $|$
   \href{https://linkedin.com/in/narendharts}{linkedin.com/in/narendharts} $|$
-  \href{https://zapdos.me}{zapdos.me}
+  \href{https://github.com/zapds}{github.com/zapds}
 \end{center}
 
 %-----------EDUCATION-----------
@@ -84,11 +86,7 @@
 \resumeSubHeadingListStart
   \resumeSubheading
     {Indian Institute of Information Technology, Design and Manufacturing}{Chennai, IN}
-    {B.Tech in Electronics and Communication Engineering (GPA: 8.58)}{2024 -- Expected 2028}
-    \resumeItemListStart
-      \resumeItem{Relevant coursework: Data Structures, Algorithms, Programming, Computer Networks, Operating Systems (ongoing)}
-      \resumeItem{Available for full-time internship (10--12 weeks) between May--August 2026; returning to full-time study post internship}
-    \resumeItemListEnd
+    {B.Tech in Electronics and Communication Engineering (GPA: 8.27)}{2024 -- Expected 2028}
 
   \resumeSubheading
     {Padma Seshadri Bala Bhavan Senior Secondary School}{Chennai, IN}
@@ -100,7 +98,7 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-  {\href{https://apollo-bot.xyz}{\textbf{Apollo Bot} \ExternalLink} $|$ \emph{Python, Node.js, PostgreSQL, Redis, Linux}}{2021 -- 2025}
+  {\href{https://apollo-bot.xyz}{\textbf{Apollo Bot} \ExternalLink} $|$ \emph{acquired | Python, Node.js, PostgreSQL, Redis, Linux}}{2021 -- 2025}
 \resumeItemListStart
   \resumeItem{Built and scaled a distributed Discord bot platform used by 450,000+ communities, processing 1,000+ messages/second at peak load.}
   \resumeItem{Improved request latency by \textasciitilde40\% by designing optimized PostgreSQL schemas and Redis caching for 500+ concurrent event streams.}
@@ -109,25 +107,17 @@
   \resumeItem{Independently owned architecture, deployment, monitoring, and monetization until successful acquisition.}
 \resumeItemListEnd
 
-% Refile
+% Savara
 \resumeProjectHeading
-    {\textbf{Refile} $|$ \emph{Python, FastAPI, Docker, Linux, OpenAI API, Supabase, Next.js}}{2025}
+    {\href{https://savara.in/}{\textbf{Savara 2026 Website} \ExternalLink} $|$ \emph{Next.js, React, TypeScript, PostgreSQL}}{2026}
     \resumeItemListStart
-      \resumeItem{Co-built an AI-driven file automation platform that converts natural-language instructions into secure, executable workflows for PDFs, images, audio, and video.}
-      \resumeItem{Designed a sandboxed execution layer using Docker containers with preinstalled CLI tools (FFmpeg, Pandoc, LibreOffice, Tesseract) to ensure isolation and safety.}
-      \resumeItem{Implemented an LLM-based planning pipeline to translate user intent into validated, multi-step shell commands without requiring user-written code.}
-      \resumeItem{Developed a FastAPI backend for file uploads, job orchestration, and concurrent container lifecycle management.}
-      \resumeItem{Delivered a production-ready MVP in a 36-hour national hackathon; secured \textbf{2nd place} among 3000+ teams for technical execution and product vision.}
+      \resumeItem{Designed, built and deployed the official ticketing and operations platform for Savara 2026, the annual techno-cultural fest of IIITDM Kancheepuram, serving 1.3K+ users, 1.1K participants, 61 events, and 1.6K check-ins.}
+      \resumeItem{Designed a role-based system for participants, volunteers, and admins, covering authentication, dashboards, announcements, and event operations.}
+      \resumeItem{Implemented end-to-end e-ticketing workflows including ticket issuance, QR-based event attendance system, admin dashboard and participation certificate generation.}
+      \resumeItem{Engineered a QR-based check-in system with sub-200ms verification latency, handling peak loads of 478 check-ins/day}
+      \resumeItem{Deployed a low-latency production setup on DigitalOcean with Caddy and colocated PostgreSQL, optimizing on-site ticket scanning and fast verification.}
     \resumeItemListEnd
 
-
-\resumeProjectHeading
-  {\href{https://github.com/zapds/flexifeed}{\textbf{FlexiFeed} \ExternalLink} $|$ \emph{Node.js, Python, SvelteKit, Playwright}}{2024}
-\resumeItemListStart
-  \resumeItem{Built an AI-powered personalized news platform that scraped, summarized, and streamed content in near real time.}
-  \resumeItem{Implemented WebSocket-based streaming to reduce perceived latency in AI-generated responses.}
-  \resumeItem{Award-winning project at IIITDM Project Development Competition for product design and execution.}
-\resumeItemListEnd
 
 \resumeProjectHeading
   {\href{https://wtf.zapdos.me}{\textbf{WTFood -- College Mess Menu App} \ExternalLink} $|$ \emph{SvelteKit, PWA}}{2025}
@@ -139,28 +129,34 @@
 
 \resumeSubHeadingListEnd
 
-\section{Roles of Responsibility}
+\section{Experience}
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-  {\textbf{Tech Development Coordinator -- IIITDM Technical Affairs}}{2025 -- Present}
+  {\textbf{Software Development Engineer Intern -- Random Walk AI}}{May 2026 -- Present}
 \resumeItemListStart
-  \resumeItem{Led frontend migration of the official technical affairs website from Create React App to Next.js, improving performance and maintainability.}
-  \resumeItem{Worked with a cross-functional student team to deploy and maintain production infrastructure using Supabase.}
+  \resumeItem{Developed a pipeline to reconstruct interactive 3D scenes from monocular images using AI-based depth estimation.}
+  \resumeItem{Implemented a GPU-accelerated renderer with off-axis projection and real-time head tracking to synthesize perspective-correct motion parallax for immersive spatial viewing of images.}
 \resumeItemListEnd
 
-\resumeProjectHeading
-  {\textbf{Coordinator -- IIITDM Developers Club}}{2025 -- Present}
-\resumeItemListStart
-  \resumeItem{Co-organized technical workshops and hands-on coding events attended by 100+ students across multiple batches.}
-  \resumeItem{Contributed to growing and sustaining an active campus developer community.}
-\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+\section{Roles of Responsibility}
+\resumeSubHeadingListStart
+
+% \resumeProjectHeading
+%   {\textbf{Tech Development Coordinator -- IIITDM Technical Affairs}}{2025 -- Present}
+% \resumeItemListStart
+%   \resumeItem{Led frontend migration of the official technical affairs website from Create React App to Next.js, improving performance and maintainability.}
+% \resumeItemListEnd
 
 \resumeProjectHeading
-  {\textbf{Core Member -- IIITDM Cybersecurity Club}}{2025 -- Present}
+  {\textbf{Coordinator -- IIITDM Developers Club (prev. Google Developer Student Club)}}{2025 -- Present}
 \resumeItemListStart
-  \resumeItem{Collaborated with the core team to organize Cybersecurity Awareness Month, including talks and CTF-style activities.}
+  \resumeItem{Co-organized hackathons, technical workshops and hands-on coding events attended by 100+ students across multiple batches.}
 \resumeItemListEnd
+
 
 \resumeSubHeadingListEnd
 
@@ -169,11 +165,11 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
 \small{
   \item{
-    \textbf{Languages}: Python, JavaScript, C \\
-    \textbf{Core CS}: Data Structures, Algorithms, OOP, Networking fundamentals \\
-    \textbf{Databases}: PostgreSQL, Redis \\
-    \textbf{Frameworks}: Node.js, Next.js, SvelteKit \\
-    \textbf{Tools}: Git, Linux, Docker, Prometheus, Cloudflare, Vercel
+    \textbf{Languages}: Python, TypeScript, JavaScript, Rust, C, SQL \\
+    \textbf{Core CS}: Data Structures \& Algorithms, Object-Oriented Programming, Computer Networks, Operating Systems, Database Management Systems \\
+    \textbf{Databases}: PostgreSQL, Redis, SQLite \\
+    \textbf{Frameworks \& Libraries}: Node.js, React, Next.js, Svelte, SvelteKit, Tailwind CSS, Drizzle ORM \\
+    \textbf{Tools \& Platforms}: Git, GitHub, Linux, Docker, Nginx, Cloudflare, Prometheus, Grafana, Supabase, Vercel, Figma
   }
 }
 \end{itemize}
