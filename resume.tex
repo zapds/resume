@@ -2,7 +2,7 @@
 % Resume in Latex
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage{textcomp}
@@ -21,10 +21,10 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
 \raggedright
@@ -74,7 +74,7 @@
 
 %----------HEADING----------
 \begin{center}
-  \textbf{\Huge \scshape Narendhar T S} \\ \vspace{2pt}
+  \textbf{\LARGE \scshape Narendhar T S} \\ \vspace{2pt}
   \small
   +91 97911 08288 $|$
   \href{mailto:narendhararasu@gmail.com}{narendhararasu@gmail.com} $|$
@@ -94,72 +94,68 @@
     {CBSE -- Class XII: 94.8\%, Class X: 96.0\%}{2012 -- 2024}
 \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
-\section{Projects}
-\resumeSubHeadingListStart
-
-\resumeProjectHeading
-  {\href{https://apollo-bot.xyz}{\textbf{Apollo Bot} \ExternalLink} $|$ \emph{acquired | Python, Node.js, PostgreSQL, Redis, Linux}}{2021 -- 2025}
-\resumeItemListStart
-  \resumeItem{Built and scaled a distributed Discord bot platform used by 450,000+ communities, processing 1,000+ messages/second at peak load.}
-  \resumeItem{Improved request latency by \texttildelow40\% by designing optimized PostgreSQL schemas and Redis caching for 500+ concurrent event streams.}
-  \resumeItem{Designed a multi-process IPC-based worker system enabling horizontal scaling across CPU cores.}
-  \resumeItem{Developed a web dashboard with OAuth2 authentication for configuration and analytics.}
-  \resumeItem{Independently owned architecture, deployment, monitoring, and monetization until successful acquisition.}
-\resumeItemListEnd
-
-% Savara
-\resumeProjectHeading
-    {\href{https://github.com/SavaraIIITDM/savara}{\textbf{Savara 2026 Website} \ExternalLink} $|$ \emph{Next.js, React, TypeScript, PostgreSQL}}{2026}
-    \resumeItemListStart
-      \resumeItem{Designed, built and deployed the official ticketing and operations platform for Savara 2026, the annual techno-cultural fest of IIITDM Kancheepuram, serving 1.3K+ users, 1.1K participants, 61 events, and 1.6K check-ins.}
-      \resumeItem{Designed a role-based system for participants, volunteers, and admins, covering authentication, dashboards, announcements, and event operations.}
-      \resumeItem{Implemented end-to-end e-ticketing workflows including ticket issuance, QR-based event attendance system, admin dashboard and participation certificate generation.}
-      \resumeItem{Engineered a QR-based check-in system with sub-200ms verification latency, handling peak loads of 478 check-ins/day}
-      \resumeItem{Deployed a low-latency production setup on DigitalOcean with Caddy and colocated PostgreSQL, optimizing on-site ticket scanning and fast verification.}
-    \resumeItemListEnd
-
-
-\resumeProjectHeading
-  {\href{https://wtf.zapdos.me}{\textbf{WTFood -- College Mess Menu App} \ExternalLink} $|$ \emph{SvelteKit, PWA}}{2025}
-\resumeItemListStart
-  \resumeItem{Designed and deployed an offline-first Progressive Web App used daily by 500+ students.}
-  \resumeItem{Implemented rule-based meal detection supporting real-time schedules and odd/even week rotations.}
-  \resumeItem{Enabled stale-while-revalidate sync to ensure fast offline access with periodic updates.}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
 \section{Experience}
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
   {\textbf{Software Development Engineer Intern -- Random Walk AI}}{May 2026 -- Present}
 \resumeItemListStart
-  \resumeItem{Developed a pipeline to reconstruct interactive 3D scenes from monocular images using AI-based depth estimation.}
-  \resumeItem{Implemented a GPU-accelerated renderer with off-axis projection and real-time head tracking to synthesize perspective-correct motion parallax for immersive spatial viewing of images.}
+  \resumeItem{Developed a pipeline reconstructing \textbf{interactive 3D scenes} from monocular images using \textbf{AI-based depth estimation}.}
+  \resumeItem{Built a \textbf{GPU-accelerated renderer} with \textbf{off-axis projection} and \textbf{real-time head tracking}, synthesizing perspective-correct motion parallax for immersive spatial viewing.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
-
-\section{Roles of Responsibility}
+%-----------PROJECTS-----------
+\section{Projects}
 \resumeSubHeadingListStart
 
-% \resumeProjectHeading
-%   {\textbf{Tech Development Coordinator -- IIITDM Technical Affairs}}{2025 -- Present}
-% \resumeItemListStart
-%   \resumeItem{Led frontend migration of the official technical affairs website from Create React App to Next.js, improving performance and maintainability.}
-% \resumeItemListEnd
+\resumeProjectHeading
+  {\href{https://apollo-bot.xyz}{\textbf{Apollo Bot} \ExternalLink} $|$ \emph{Acquired $|$ Python, Node.js, PostgreSQL, Redis, Linux}}{2021 -- 2025}
+\resumeItemListStart
+  \resumeItem{Built and scaled a distributed Discord bot platform serving \textbf{450,000+ communities}, processing \textbf{1,000+ messages/second} at peak load.}
+  \resumeItem{Cut request latency by \textbf{$\sim$40\%} through optimized \textbf{PostgreSQL} schemas and \textbf{Redis} caching across \textbf{500+ concurrent event streams}.}
+  \resumeItem{Architected a multi-process \textbf{IPC-based worker system} enabling horizontal scaling across CPU cores.}
+  \resumeItem{Shipped a web dashboard with \textbf{OAuth2} authentication for server configuration and analytics.}
+  \resumeItem{Solely owned architecture, deployment, monitoring, and monetization through to a \textbf{successful acquisition}.}
+\resumeItemListEnd
+
+% Savara
+\resumeProjectHeading
+    {\href{https://github.com/SavaraIIITDM/savara}{\textbf{Savara 2026 Platform} \ExternalLink} $|$ \emph{Next.js, React, TypeScript, PostgreSQL}}{2026}
+    \resumeItemListStart
+      \resumeItem{Built and deployed the official ticketing and operations platform for Savara 2026, IIITDM's annual techno-cultural fest, serving \textbf{1.3K+ users}, \textbf{1.1K participants}, \textbf{61 events}, and \textbf{1.6K check-ins}.}
+      \resumeItem{Designed \textbf{role-based access} for participants, volunteers, and admins, spanning authentication, dashboards, announcements, and event operations.}
+      \resumeItem{Implemented end-to-end \textbf{e-ticketing}: ticket issuance, admin dashboard, and automated participation certificate generation.}
+      \resumeItem{Engineered a \textbf{QR-based check-in system} with \textbf{sub-200ms} verification latency, handling peaks of \textbf{478 check-ins/day}.}
+      \resumeItem{Deployed on \textbf{DigitalOcean} with \textbf{Caddy} and colocated PostgreSQL for fast, reliable on-site ticket scanning.}
+    \resumeItemListEnd
 
 \resumeProjectHeading
-  {\textbf{Core Member -- IIITDM Cybersecurity Club}}{2025 -- Present}
+  {\href{https://github.com/denoiselabsx/refile}{\textbf{ReFile} \ExternalLink} $|$ \emph{FastAPI, Docker, LangChain, Groq, Supabase}}{Oct 2025}
 \resumeItemListStart
-  \resumeItem{Designed and built Hack n Shield, a self-hosted attack/defense CTF engine (Python, FastAPI, SQLite) used live at Savara 2026 and Cybersecurity Awareness Month: teams defended their own services while capturing others' flags.}
-  \resumeItem{Organized CTFs, quizzes, and cybersecurity drills for Cybersecurity Awareness Month, a Government of India initiative}
+  \resumeItem{Built an \textbf{AI-powered media-processing backend} that turns \textbf{natural-language} file requests into executable Linux workflows for video, audio, image, PDF, and \textbf{OCR} tasks.}
+  \resumeItem{Implemented \textbf{Docker-isolated execution}, ownership checks, sanitized storage, reusable command presets, and \textbf{Supabase}-backed file metadata.}
+  \resumeItem{Won \textbf{2nd Place} at a \textbf{national-level hackathon} conducted by \textbf{VIT Chennai}.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\href{https://wtf.zapdos.me}{\textbf{WTFood -- College Mess Menu App} \ExternalLink} $|$ \emph{SvelteKit, PWA}}{2025}
+\resumeItemListStart
+  \resumeItem{Designed and deployed an \textbf{offline-first PWA} used daily by \textbf{500+ students}.}
+  \resumeItem{Implemented rule-based meal detection supporting real-time schedules and odd/even week rotations.}
+  \resumeItem{Used \textbf{stale-while-revalidate} sync for instant offline access with periodic background updates.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
+
+\section{Achievements \& Leadership}
+\begin{itemize}[leftmargin=0.15in, itemsep=-1pt, topsep=2pt]
+  \resumeItem{\textbf{National Competitions:} Secured \textbf{2nd Place} in RetailTech/SaaS and \textbf{Top 28 of 750+ teams} at VOID:V1 among \textbf{3,000+ participants}.}
+  \resumeItem{\textbf{GDSC Coordinator:} Helped organize Vashisht Hackathon 3.0 with \textbf{1,200+ participating teams} and \textbf{IDFC Bank} sponsorship.}
+  \resumeItem{\textbf{Cybersecurity Club Core Member:} Built \textbf{Hack n Shield}, a self-hosted attack/defense CTF engine (Python, FastAPI, SQLite) used live at Savara 2026 and Cybersecurity Awareness Month.}
+  \resumeItem{Organized CTFs, quizzes, and security drills for \textbf{Cybersecurity Awareness Month}, a Government of India initiative.}
+\end{itemize}\vspace{-4pt}
 
 %-----------SKILLS-----------
 \section{Technical Skills}
